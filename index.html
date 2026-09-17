@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metadata -->
+    <title>Bengkel Mobil & Motor Panggilan Jabodetabek | BengkelPanggilan.web.id</title>
+    <meta name="description" content="Layanan bengkel mobil dan motor panggilan 24 jam. Mekanik datang ke lokasi Anda (rumah, kantor, jalan) area Jakarta, Bogor, Depok, Tangerang, Bekasi. Hubungi 0851-9955-8339.">
+    <meta name="keywords" content="bengkel panggilan, montir mobil panggilan, montir motor panggilan, bengkel 24 jam, mogok di jalan, bengkel terdekat, bengkel jabodetabek, servis mobil di rumah, jumper aki panggilan">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AutoRepair",
+          "@id": "https://bengkelpanggilan.web.id/#organization",
+          "name": "Bengkel Panggilan Web ID",
+          "url": "https://bengkelpanggilan.web.id",
+          "logo": "https://montirmotor.com/web_assets/images/logo/montirmotor.png",
+          "image": "https://montirmotor.com/assets/img/mekanik/montirmotor-area.webp",
+          "telephone": "+6285199558339",
+          "priceRange": "$$",
+          "description": "Layanan bengkel mobil dan motor panggilan darurat ke lokasi Anda untuk wilayah Jakarta, Bogor, Depok, Tangerang, dan Bekasi.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Jabodetabek",
+            "addressCountry": "ID"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Jakarta" },
+            { "@type": "City", "name": "Bogor" },
+            { "@type": "City", "name": "Depok" },
+            { "@type": "City", "name": "Tangerang" },
+            { "@type": "City", "name": "Bekasi" }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/montirmotorcom",
+            "https://www.facebook.com/profile.php?id=61577896539396",
+            "https://linkedin.com/in/montirmotor",
+            "https://www.youtube.com/@montirmotor-com",
+            "https://www.tiktok.com/@montirmotor.com",
+            "https://www.pinterest.com/bengkelmotorpanggilan",
+            "https://x.com/montirmotor"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://bengkelpanggilan.web.id/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Apakah melayani panggilan ke jalan tol atau lokasi mogok?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ya, mekanik kami siap meluncur ke lokasi darurat Anda, baik di rumah, kantor, pinggir jalan, maupun rest area tol di seluruh cakupan Jabodetabek."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kendaraan apa saja yang bisa diperbaiki?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Kami menangani berbagai merek dan jenis kendaraan, baik mobil (bensin/diesel) maupun sepeda motor (matic/manual/kopling). Layanan meliputi servis ringan hingga penanganan mogok darurat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Berapa lama mekanik tiba di lokasi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Estimasi waktu kedatangan bergantung pada jarak dan kondisi lalu lintas, namun mekanik terdekat kami usahakan tiba dalam waktu 30 hingga 60 menit setelah lokasi dikonfirmasi."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: '#e11d48', // Rose 600 - Red for automotive/urgency
+                        dark: '#0f172a', // Slate 900
+                        accent: '#f59e0b', // Amber 500 for warnings/highlights
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { position: relative; padding-bottom: 80px; } /* Space for sticky WA button */
+        .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Floating WhatsApp Button Animation */
+        .bounce-wa { animation: bounceWa 2s infinite; }
+        @keyframes bounceWa {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-slate-50">
+
+    <nav class="bg-dark/95 backdrop-blur-sm fixed w-full z-50 top-0 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="https://montirmotor.com" class="flex-shrink-0 flex items-center gap-2 group">
+                        <div class="w-10 h-10 bg-brand rounded-lg flex items-center justify-center text-white group-hover:bg-rose-500 transition">
+                            <i class="fa-solid fa-wrench text-xl"></i>
+                        </div>
+                        <span class="font-bold text-xl md:text-2xl text-white tracking-tight">Bengkel<span class="text-brand">Panggilan</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#layanan" class="text-gray-300 hover:text-white transition font-medium">Layanan</a>
+                    <a href="#area" class="text-gray-300 hover:text-white transition font-medium">Area Cover</a>
+                    <a href="#keunggulan" class="text-gray-300 hover:text-white transition font-medium">Keunggulan</a>
+                    <div class="flex items-center gap-2 text-white bg-slate-800 px-4 py-2 rounded-full border border-slate-700">
+                        <i class="fa-solid fa-phone text-brand text-sm"></i>
+                        <span class="font-bold text-sm tracking-wide"><a href="https://wa.me/6285199558339">0851-9955-8339</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-28 pb-16 md:pt-36 md:pb-24 bg-dark relative overflow-hidden">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://montirmotor.com/web_assets/images/logo/montirmotor.png" alt="Mekanik Panggilan" class="w-full h-full object-cover opacity-30 mix-blend-overlay">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/80 to-transparent"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 fade-in-up">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand/20 border border-brand/30 text-brand font-semibold text-sm mb-6">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
+                    </span>
+                    Siap Berangkat ke Lokasi Anda!
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+                    Mobil atau Motor Anda <span class="text-brand">Mogok di Jalan?</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-slate-300 mb-8 font-light leading-relaxed">
+                    Jangan panik! Montir profesional kami siap datang ke rumah, kantor, atau pinggir jalan di area <strong class="text-white font-semibold">Jakarta, Bogor, Depok, Tangerang, dan Bekasi</strong>. Kami bawa bengkel ke tempat Anda.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/6285199558339?text=Halo%20BengkelPanggilan,%20saya%20butuh%20bantuan%20mekanik%20segera.%20Lokasi%20saya%20di..." target="_blank" class="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-4 px-8 rounded-xl shadow-lg shadow-green-500/30 transition duration-300 flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Hubungi WhatsApp Sekarang
+                    </a>
+                    <a href="tel:+6285199558339" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white font-bold text-lg py-4 px-8 rounded-xl transition duration-300 flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-phone"></i> 0851-9955-8339
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Layanan Bengkel Panggilan Kami</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Solusi lengkap perbaikan dan perawatan kendaraan langsung di lokasi Anda tanpa perlu repot mencari bengkel.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Layanan 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-brand transition-colors group">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Servis & Mogok Mobil</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Penanganan mobil mogok, overheat, masalah kelistrikan, ganti oli, tune up, ganti kampas rem, hingga pengecekan kaki-kaki langsung di garasi Anda.
+                    </p>
+                </div>
+
+                <!-- Layanan 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-brand transition-colors group">
+                    <div class="w-16 h-16 bg-brand/10 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-motorcycle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Servis & Mogok Motor</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Perbaikan motor mogok, putus v-belt matic, ban bocor/ganti ban, ganti rantai, servis injeksi, hingga kelistrikan lampu mati di tengah jalan.
+                    </p>
+                </div>
+
+                <!-- Layanan 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-brand transition-colors group">
+                    <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-car-battery"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Layanan Aki Darurat</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Mobil atau motor tidak bisa distarter? Kami sediakan layanan jumper aki darurat atau penggantian aki baru (delivery & pasang) di lokasi Anda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="area" class="py-12 bg-slate-900 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="md:w-1/3">
+                    <h2 class="text-2xl font-bold text-white mb-2"><i class="fa-solid fa-location-dot text-brand mr-2"></i> Area Cakupan</h2>
+                    <p class="text-slate-400 text-sm">Mekanik terdekat dari titik Anda siap diluncurkan.</p>
+                </div>
+                <div class="md:w-2/3 flex flex-wrap gap-3 justify-start md:justify-end">
+                    <span class="px-4 py-2 bg-slate-800 text-white rounded-lg font-medium border border-slate-700">Jakarta</span>
+                    <span class="px-4 py-2 bg-slate-800 text-white rounded-lg font-medium border border-slate-700">Bogor</span>
+                    <span class="px-4 py-2 bg-slate-800 text-white rounded-lg font-medium border border-slate-700">Depok</span>
+                    <span class="px-4 py-2 bg-slate-800 text-white rounded-lg font-medium border border-slate-700">Tangerang</span>
+                    <span class="px-4 py-2 bg-slate-800 text-white rounded-lg font-medium border border-slate-700">Bekasi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="keunggulan" class="py-16 md:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+                
+                <!-- Mengapa Memilih Kami (Listicle) -->
+                <div>
+                    <span class="text-brand font-bold uppercase tracking-wider text-sm mb-2 block">Kelebihan Kami</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-8">Kenapa Memilih BengkelPanggilan.web.id?</h2>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-4">
+                                <i class="fa-solid fa-bolt text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-dark mb-1">Respon Cepat (Fast Response)</h3>
+                                <p class="text-slate-600 leading-relaxed">Begitu Anda mengirimkan lokasi (*share loc*) via WhatsApp, montir terdekat langsung kami tugaskan ke titik Anda untuk meminimalisir waktu tunggu.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mt-1 mr-4">
+                                <i class="fa-solid fa-user-gear text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-dark mb-1">Mekanik Handal & Bawa Alat Lengkap</h3>
+                                <p class="text-slate-600 leading-relaxed">Ditangani oleh montir berpengalaman yang sudah dilengkapi dengan *tool kit* profesional layaknya standar bengkel konvensional.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center mt-1 mr-4">
+                                <i class="fa-solid fa-money-bill-wave text-brand"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-dark mb-1">Biaya Transparan & Disepakati</h3>
+                                <p class="text-slate-600 leading-relaxed">Pengecekan dilakukan terlebih dahulu. Kami akan menginformasikan estimasi biaya perbaikan dan *sparepart* (jika ada) sebelum pengerjaan dimulai.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- FAQ Section (AEO Optimized) -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
+                    <h2 class="text-2xl font-bold text-dark mb-6 border-b pb-4">Tanya Jawab (FAQ)</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="group">
+                            <h3 class="font-bold text-lg text-dark flex items-start">
+                                <i class="fa-regular fa-circle-question text-brand mt-1 mr-3"></i> 
+                                Apakah melayani panggilan ke jalan tol atau lokasi mogok?
+                            </h3>
+                            <p class="text-slate-600 mt-2 pl-8 leading-relaxed">
+                                Ya, mekanik kami siap meluncur ke lokasi darurat Anda, baik di rumah, kantor, pinggir jalan, maupun rest area tol di seluruh cakupan Jabodetabek.
+                            </p>
+                        </div>
+                        
+                        <div class="group">
+                            <h3 class="font-bold text-lg text-dark flex items-start">
+                                <i class="fa-regular fa-circle-question text-brand mt-1 mr-3"></i> 
+                                Kendaraan apa saja yang bisa diperbaiki?
+                            </h3>
+                            <p class="text-slate-600 mt-2 pl-8 leading-relaxed">
+                                Kami menangani berbagai merek dan jenis kendaraan, baik mobil (bensin/diesel) maupun sepeda motor (matic/manual/kopling).
+                            </p>
+                        </div>
+
+                        <div class="group">
+                            <h3 class="font-bold text-lg text-dark flex items-start">
+                                <i class="fa-regular fa-circle-question text-brand mt-1 mr-3"></i> 
+                                Berapa lama mekanik tiba di lokasi?
+                            </h3>
+                            <p class="text-slate-600 mt-2 pl-8 leading-relaxed">
+                                Estimasi waktu kedatangan bergantung pada jarak montir terdekat dan kondisi lalu lintas. Namun kami memprioritaskan kondisi darurat agar secepatnya tertangani.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark pt-16 pb-8 border-t-4 border-brand text-slate-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Info -->
+                <div class="lg:col-span-2">
+                    <a href="https://wa.me/6285199558339" class="flex-shrink-0 flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 bg-brand rounded-lg flex items-center justify-center text-white">
+                            <i class="fa-solid fa-wrench text-xl"></i>
+                        </div>
+                        <span class="font-bold text-2xl text-white tracking-tight">Bengkel<span class="text-brand">Panggilan</span></span>
+                    </a>
+                    <p class="text-slate-400 mb-6 max-w-sm leading-relaxed">
+                        Solusi praktis perbaikan kendaraan Anda tanpa perlu ke bengkel. Layanan terpercaya untuk mobil dan motor, siap dipanggil ke lokasi darurat Anda di Jabodetabek.
+                    </p>
+                    <div class="flex items-center gap-4 text-white">
+                        <i class="fa-brands fa-whatsapp text-green-500 text-2xl"></i>
+                        <div>
+                            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Hubungi Kami Darurat</p>
+                            <p class="font-bold text-xl"><a href="https://wa.me/6285199558339">0851-9955-8339</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Navigasi</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://montirmotor.com" class="hover:text-brand transition flex items-center"><i class="fa-solid fa-chevron-right text-xs mr-2 text-slate-600"></i> Beranda</a></li>
+                        <li><a href="#layanan" class="hover:text-brand transition flex items-center"><i class="fa-solid fa-chevron-right text-xs mr-2 text-slate-600"></i> Layanan Kami</a></li>
+                        <li><a href="#area" class="hover:text-brand transition flex items-center"><i class="fa-solid fa-chevron-right text-xs mr-2 text-slate-600"></i> Area Cakupan</a></li>
+                        <li><a href="#keunggulan" class="hover:text-brand transition flex items-center"><i class="fa-solid fa-chevron-right text-xs mr-2 text-slate-600"></i> Keunggulan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Ikuti Kami (MontirMotor)</h4>
+                    <p class="text-sm text-slate-400 mb-4">Temukan tips otomotif dan kegiatan kami sehari-hari:</p>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://www.instagram.com/montirmotorcom" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-purple-500 hover:text-white transition" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        
+                        <a href="https://www.facebook.com/profile.php?id=61577896539396" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        
+                        <a href="https://www.youtube.com/@montirmotor-com" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-red-600 hover:text-white transition" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        
+                        <a href="https://www.tiktok.com/@montirmotor.com" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-black hover:text-white transition" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        
+                        <a href="https://x.com/montirmotor" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-black hover:text-white transition" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        
+                        <a href="https://linkedin.com/in/montirmotor" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-700 hover:text-white transition" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        
+                        <a href="https://www.pinterest.com/bengkelmotorpanggilan" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-red-600 hover:text-white transition" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 text-center text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2026 BengkelPanggilan.web.id. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Layanan Otomotif Darurat Jabodetabek</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SXO Floating WhatsApp Button - Essential for emergency services -->
+    <a href="https://wa.me/6285199558339?text=Halo%20BengkelPanggilan,%20saya%20butuh%20bantuan%20mekanik%20segera.%20Lokasi%20saya%20di..." target="_blank" class="fixed bottom-6 right-6 z-[100] group">
+        <div class="relative flex items-center">
+            <!-- Tooltip/Banner text that shows constantly or on hover -->
+            <div class="mr-4 bg-white px-4 py-2 rounded-lg shadow-lg shadow-black/10 border border-slate-100 font-semibold text-slate-700 text-sm md:opacity-0 md:-translate-x-4 md:group-hover:opacity-100 md:group-hover:translate-x-0 transition-all duration-300 pointer-events-none whitespace-nowrap hidden sm:block">
+                Panggil Montir Sekarang!
+                <div class="absolute right-[-6px] top-1/2 -translate-y-1/2 w-3 h-3 bg-white rotate-45 border-r border-t border-slate-100"></div>
+            </div>
+            
+            <!-- Main Button -->
+            <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl shadow-lg shadow-green-500/40 hover:bg-green-600 hover:scale-110 transition-transform duration-300 bounce-wa">
+                <i class="fa-brands fa-whatsapp"></i>
+                <!-- Notification Ping -->
+                <span class="absolute top-0 right-0 flex h-4 w-4">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-4 w-4 bg-brand border-2 border-white"></span>
+                </span>
+            </div>
+        </div>
+    </a>
+
+</body>
+</html>
